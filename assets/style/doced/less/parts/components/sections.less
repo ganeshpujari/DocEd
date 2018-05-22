@@ -1,0 +1,239 @@
+.signup-left-section{
+	height: 100vh;
+	position: fixed;
+    z-index: 1;
+    top: 64px;
+    width: 33.33%;
+    bottom: 0;	
+}
+.signup-left-section-img{
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+.signup-right-section{
+	padding-top: @space * 7;
+	padding-bottom: @space * 5;
+	height: 600px;
+    overflow: auto;
+}
+.signup-sticky-bottom{
+	position: fixed;
+    background-color: @light-color;
+    width: calc(100% - 33.33%);
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    z-index: 2;
+}
+.signup-previous-btn{
+	color: @primary-color;
+	i,span{
+		vertical-align: middle;
+	}
+	i{
+		font-size: @font-size-small;
+	}
+	span{
+		padding-left: @space/2;
+	}
+}
+.signup-heading-section{
+	padding-bottom:@space/2;
+	h1{
+		color: @dark-color;
+	}
+	h4{
+		color: #8e9091;	
+	}
+}
+
+.signup-profile-pic{
+	.circle(80px);
+	object-fit: cover;
+}
+.signup-remove-pic{
+	display: none;
+}
+.signup-upload-input{
+	width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.signup-upload-input+label {
+    font-weight: 400;
+    color: #8e9091;
+    font-size: @font-size-small;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+.signup-upload-right-sec{
+	vertical-align: middle;
+	padding-left: @space;
+}
+.signup-browse-wrap a{
+	color: @secondary-color;
+	span{
+		padding-left: @space/2;
+	}
+}
+.signup-user-profile-wrapper{
+	padding:@space 0px @space/2;
+}
+.signup-input-wrap{
+	padding: @space - 4 0px;
+	position: relative;
+}
+.input-error-text{
+	display: none;
+	font-size: @font-size-small;
+	position: absolute;
+	color: @error-color;
+}
+.show-field-error{
+	.input-error-text,.otp-error-text{
+		display: block;
+	}
+	input{
+		border: 1px solid @error-color;
+	}
+}
+.signup-bottom-btn-wrapper{
+	padding: @space * 2 0px;
+}
+//signup otp modal css start
+.signup-otp-content-wrapper{
+	padding: @space + @space/2 @space + @space/2 @space * 2;
+	h3{
+		color: #202223;
+	}
+	p{
+		font-size: @font-size-small;
+		color: #8e9091;
+	}
+}
+
+.signup-modal-inp-wrapper{
+	max-width: 280px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: @space/2;
+	padding-bottom: @space * 2;
+	label{
+		color: #202223;
+		font-size: @font-size + 2;
+		font-weight: 600;
+
+	}
+	input{
+		margin-top: @space;
+	}
+}
+.signup-otp-resend-time{
+	color: #616263;
+	padding: 6px;
+}
+.btn-resend-otp{
+	color: @primary-color;
+
+}
+.signup-modal-resend-icon{
+	padding-right: @space/2;
+}
+.otp-error-text{
+	display: none;
+	font-size: 14px;
+	color: @error-color;
+}
+//signup otp modal css end
+
+//signup step2 css start
+.signup-add-education-section{
+	p{
+		cursor: pointer;
+		color: @secondary-color;
+		span{
+			vertical-align: middle;
+			padding-left: @space/2;
+		}
+	}
+}
+.signup-work-info-wrapper{
+	h5{
+		color: #202223;
+	}
+}
+.signup-work-info-col-wrapper{
+	   border-bottom: 2px solid #efefef;
+	   padding-bottom: @space + 2;
+	   margin-bottom: @space/2;
+	   padding-top: @space;
+}
+.signup-work-speci{
+	color: #8e9091;
+	font-size: @font-size-small;
+}
+.signup-work-date-to-from{
+	vertical-align: middle;
+	font-size: @font-size-small;
+	color: #616263;
+	padding-right: @space * 5;
+	padding-left: @space/4;
+}
+.signup-work-duration-section{
+	i{
+		vertical-align: middle;
+	}
+}
+.signup-work-delete{
+	padding-left: 22px;
+	font-size: @font-size-small;
+	color: #cd5959;
+}
+.signup-form-wrapper{
+	max-width: 530px;
+	margin-top: @space - 4;
+}
+.signup-right-delete-section{
+	img{
+		position: absolute;
+		right: 0;
+		margin-top: @space + 2;
+	}
+}
+
+//signup step2 css end
+.intl-tel-input{
+	display: block !important;
+}//onboard-tel-input-box
+.signup-datepicker-input{
+	padding-left: (@space * 3) + 4 !important;
+}
+.date-picker-icon{
+	position: absolute;
+    left: 0;
+    z-index: 11;
+    padding: 6px 12px;
+    border-right: 1px solid #d8d8d8;
+    border-radius: 0;
+}
+
+.signup-country-code{
+	position: absolute;
+    left: 0;
+    z-index: 2;
+    padding: @space/2;
+    margin-top: 22px;
+    border-right: 1px solid #d8d8d8;
+    border-radius: 0;
+    min-height: 40px;
+    color: #d8d8d8;
+}
+.signup-phone-input{
+	padding-left: 49px !important;
+}

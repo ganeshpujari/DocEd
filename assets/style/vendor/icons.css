@@ -1,0 +1,23 @@
+/* Icons from directory "" */
+
+.icon{
+	background-image:url('../../img/icons/icons.svg');
+	background-repeat: no-repeat;
+}
+
+.icon-analytics,.icon-analytics\:regular{background-position:0 0;}
+.icon-analytics-dims{width:44px;height:44px}
+.icon-auto,.icon-auto\:regular{background-position:0 -44px;}
+.icon-auto-dims{width:46px;height:46px}
+.icon-integrate,.icon-integrate\:regular{background-position:0 -90px;}
+.icon-integrate-dims{width:46px;height:46px}
+.icon-love,.icon-love\:regular{background-position:0 -136px;}
+.icon-love-dims{width:46px;height:46px}
+.icon-real-time,.icon-real-time\:regular{background-position:0 -182px;}
+.icon-real-time-dims{width:46px;height:46px}
+.icon-sync,.icon-sync\:regular{background-position:0 -228px;}
+.icon-sync-dims{width:46px;height:46px}
+.icon-updated,.icon-updated\:regular{background-position:0 -274px;}
+.icon-updated-dims{width:46px;height:46px}
+.icon-workforce,.icon-workforce\:regular{background-position:0 -320px;}
+.icon-workforce-dims{width:45px;height:46px}

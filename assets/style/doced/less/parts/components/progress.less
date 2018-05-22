@@ -1,0 +1,77 @@
+.progress {
+  width: 220px;
+  display: table;
+  table-layout: fixed;
+  padding: 0;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.progress__step {
+  display: table-cell;
+  text-align: center;
+  vertical-align: top;
+  position: relative;
+}
+.progress__step::before {
+  content: "";
+  display: block;
+  .circle(32px);
+  margin: 6px auto;
+  background-color: @light-color;
+}
+.progress__step:not(:first-child)::after {
+  content: "";
+  position: absolute;
+  top: 1.3em;
+  left: -50%;
+  width: 100%;
+  height: .2em;
+  z-index: -1;
+  background-color: #efefef;
+  border:none;
+}
+
+.progress--counter .progress__step {
+  counter-increment: step-number;
+  font-weight: bold;
+  line-height: 1.85em;
+  color: #8e9091;
+}
+.progress--counter .progress__step::before {
+  content: counter(step-number);
+}
+
+/* steps before the active step */
+.progress__step::before, .progress__step::after {
+ 
+}
+.progress__step::before {
+  //background-color: #8d6;
+  //box-shadow: inset 0 0 0 3px #6a3;
+}
+
+/* steps after the active step */
+.progress__step--active ~ .progress__step::before {
+  //background-color: #eee;
+  //box-shadow: inset 0 0 0 3px #ccc;
+   border: 1px solid #d8d8d8;
+  //background-color: @light-color;
+}
+.progress__step--active ~ .progress__step::after {
+  background-color: #efefef;
+}
+
+/* the active step */
+.progress__step--active::before {
+  background-color: @brand-color;
+  //border:2px solid lighten(@brand-color,50%);
+}
+.progress__step--active {
+  &.progress__step::before{
+    color: @light-color;
+  }
+  &.progress__step::after{
+    background-color: @brand-color;
+  }
+}
